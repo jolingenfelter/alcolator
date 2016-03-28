@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E78B3211CA9867400ED78B8 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E78B3201CA9867400ED78B8 /* WhiskeyViewController.m */; };
 		9EB12AEB1CA8292400A0178A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB12AEA1CA8292400A0178A /* main.m */; };
 		9EB12AEE1CA8292400A0178A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB12AED1CA8292400A0178A /* AppDelegate.m */; };
 		9EB12AF11CA8292400A0178A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB12AF01CA8292400A0178A /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E78B31F1CA9867400ED78B8 /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiskeyViewController.h; sourceTree = "<group>"; };
+		9E78B3201CA9867400ED78B8 /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiskeyViewController.m; sourceTree = "<group>"; };
 		9EB12AE61CA8292400A0178A /* Alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB12AEA1CA8292400A0178A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EB12AEC1CA8292400A0178A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				9EB12AF71CA8292400A0178A /* LaunchScreen.storyboard */,
 				9EB12AFA1CA8292400A0178A /* Info.plist */,
 				9EB12AE91CA8292400A0178A /* Supporting Files */,
+				9E78B31F1CA9867400ED78B8 /* WhiskeyViewController.h */,
+				9E78B3201CA9867400ED78B8 /* WhiskeyViewController.m */,
 			);
 			path = Alcolator;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EB12AF11CA8292400A0178A /* ViewController.m in Sources */,
+				9E78B3211CA9867400ED78B8 /* WhiskeyViewController.m in Sources */,
 				9EB12AEE1CA8292400A0178A /* AppDelegate.m in Sources */,
 				9EB12AEB1CA8292400A0178A /* main.m in Sources */,
 			);
@@ -300,6 +306,7 @@
 				9EB12AFF1CA8292400A0178A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
