@@ -185,18 +185,18 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="EYM-nE-Oac"/>
                                 <exclude reference="QOL-ts-aZh"/>
                                 <exclude reference="kAi-Dy-6mY"/>
-                                <exclude reference="EYM-nE-Oac"/>
                                 <exclude reference="uAS-wC-Jug"/>
-                                <exclude reference="yZg-Bf-dUI"/>
-                                <exclude reference="cyW-EF-LDy"/>
                                 <exclude reference="GBo-xr-Bum"/>
+                                <exclude reference="cyW-EF-LDy"/>
+                                <exclude reference="yZg-Bf-dUI"/>
                                 <exclude reference="a0D-Uy-xzS"/>
-                                <exclude reference="nEE-KE-zX1"/>
                                 <exclude reference="ihG-1v-YHf"/>
-                                <exclude reference="qgM-7H-UwU"/>
+                                <exclude reference="nEE-KE-zX1"/>
                                 <exclude reference="NMU-D4-34Q"/>
+                                <exclude reference="qgM-7H-UwU"/>
                             </mask>
                         </variation>
                     </view>
