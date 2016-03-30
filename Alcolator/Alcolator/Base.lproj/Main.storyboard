@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VdW-7o-doo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="owy-Z7-TwO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -201,7 +201,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Whiskey" id="6DQ-2V-NSI"/>
+                    <navigationItem key="navigationItem" title="Whiskey" id="6DQ-2V-NSI">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="XWY-JL-GxU"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="beerCountSlider" destination="DeQ-FL-XKv" id="6Jg-56-c3x"/>
                         <outlet property="beerPercentTextField" destination="TZV-O7-DUV" id="4uV-aB-vmo"/>
@@ -253,7 +255,7 @@
                             <constraint firstItem="NBs-d3-wWO" firstAttribute="top" secondItem="Qkz-G6-ccC" secondAttribute="bottom" constant="20" id="pjJ-mU-QyA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Alcolator" id="f1M-m7-9eA"/>
+                    <navigationItem key="navigationItem" title="Select Alcolator" id="vrZ-ze-zOB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9o-Nl-imH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
