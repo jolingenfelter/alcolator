@@ -12,11 +12,14 @@
 
 @end
 
+
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,17 +35,22 @@
         // The user typed 0, or something that's not a number, so clear the field
         
         sender.text = nil;
+        
     }
 }
 
 - (IBAction)SliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
-    self.navigationItem.title = [NSString stringWithFormat:@"Wine (%d glasses)", (int)ceilf(self.beerCountSlider.value)];
+    [self updateUserInterface];
 }
 
 
 - (IBAction)buttonPressed:(id)sender {
+    [self updateUserInterface];
+}
+
+- (void) updateUserInterface {
     [self.beerPercentTextField resignFirstResponder];
     // first, calculate how much alchol is in all those beers...
     int numberOfBeers = self.beerCountSlider.value;
@@ -71,9 +79,12 @@
         wineText = NSLocalizedString(@"glasses", @"plural of glass");
     }
     
+    
     //generate the result text, and display it on the label
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of wine", nil), numberOfBeers, beerText, [self.beerPercentTextField.text floatValue], numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
     self.resultLabel.text = resultText;
+    self.title = [NSString stringWithFormat:@"Wine (%.f glasses)", numberOfWineGlassesForEquivalentAlcoholAmount];
+
 }
 
 - (IBAction)tapGestureDidFire:(UITapGestureRecognizer *)sender {
