@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
 - (void) buttonPressed: (UIButton *)sender;
+- (void) updateTabbedBar;
 
 @end
 

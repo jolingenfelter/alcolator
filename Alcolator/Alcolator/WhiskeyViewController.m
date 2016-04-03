@@ -14,10 +14,7 @@
 
 @implementation WhiskeyViewController
 
-- (void)buttonPressed:(UIButton *)sender;
-{
-    [self.beerPercentTextField resignFirstResponder];
-    
+- (void) updateTabbedBar {
     int numberOfBeers = self.beerCountSlider.value;
     int ouncesInOneBeerGlass = 12; // assume 12 oz beer bottle
     
@@ -30,6 +27,7 @@
     
     float ouncesOfAlcoholPerWhiskeyGlass = ouncesInOneWhiskeyGlass * alcoholPercentageOfWhiskey;
     float numberOfWhiskeyGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWhiskeyGlass;
+    int wholeNumber = ceilf(numberOfWhiskeyGlassesForEquivalentAlcoholAmount);
     
     NSString *beerText;
     if (numberOfBeers == 0) {
@@ -46,6 +44,7 @@
     }
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of whiskey.", nil), numberOfBeers, beerText, [self.beerPercentTextField.text floatValue], numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
     self.resultLabel.text = resultText;
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", wholeNumber]];
 }
 
 @end
